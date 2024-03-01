@@ -13,8 +13,8 @@
     {/if}
     <div class={`flex scroll-smooth ${mobileOverFlow ? "justify-left": "flex-wrap"} overflow-x-scroll remove-scrollbar md:justify-left ${overFlow ? "" : "md:flex-wrap"}`}>
       {#each images as image, i (i)}
-        <div class={`m-2 ${mobileOverFlow ? "": "w-[43vw]"} md:w-[14vw]`}>
-          <div class={`${mobileOverFlow ? "w-[33vw]": "w-[43vw]"} w-[43vw] md:w-[14vw] ${imageHeight}`}>
+        <div class={`m-2 ${mobileOverFlow ? "w-[38vw]": "w-[43vw]"} md:w-[14vw]`}>
+          <div class={`${mobileOverFlow ? "w-[38vw]": "w-[43vw]"} md:w-[14vw] ${imageHeight}`}>
             <img src={image.src.original} alt={image.alt} class="w-full h-full rounded-lg">
           </div>
           <p class="text-sm text-ellipsis overflow-x-hidden whitespace-nowrap">{image.alt}</p>
