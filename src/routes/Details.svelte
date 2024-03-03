@@ -8,15 +8,15 @@
     const getImages = get_photos(`${slug} cloth`);
 </script>
 
-<div>
+<main>
     {#await getImages}
         <div></div>
     {:then images} 
-        <div class="h-[10vh]">
+        <div class="h-[7vh]">
             <Scaffold active={capitalizedSlug} />
         </div>
-        <div class="h-[88vh] overflow-y-scroll remove-scrollbar">
+        <div class="h-[91vh] overflow-y-scroll remove-scrollbar">
             <FluidGrid {images} imageHeight={"h-[35vh]"} heading={capitalizedSlug} mobileOverFlow={false}/>
         </div>
     {/await}
-</div>
+</main>

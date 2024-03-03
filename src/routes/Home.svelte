@@ -18,10 +18,10 @@
   {#await getAll}
     <div></div>
   {:then all} 
-    <div class="h-[10vh]">
+    <div class="h-[7vh]">
         <Scaffold />
     </div>
-    <div class="h-[88vh] overflow-y-scroll scroll-smooth remove-scrollbar">
+    <div class="h-[91vh] overflow-y-scroll scroll-smooth remove-scrollbar">
       <div class="flex justify-center">
         <div class="relative">        
           <div class="h-[80vh] w-[100vw] md:w-[80vw]">
